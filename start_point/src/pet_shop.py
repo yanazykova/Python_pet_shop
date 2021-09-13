@@ -47,3 +47,16 @@ def get_customer_cash(customers):
 def remove_customer_cash(customers, amount):
     customers["cash"] -= amount
 
+def get_customer_pet_count(customers):
+    return len(customers["pets"])
+
+
+# def add_pet_to_customer(customers, new_pet):
+#     new_pets_list = customers["pets"]
+#     for customer in customers:
+#         new_pets_list.append(new_pet)
+#         return len(new_pets_list)
+
+def add_pet_to_customer(customer, pet):
+    customer["pets"].append(pet)
+
